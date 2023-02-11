@@ -2,9 +2,13 @@
 module.exports = {
     content: ['./index.html', './src/**/*.{js,ts,jsx,tsx}'],
     theme: {
+        fontFamily: {
+            display: ['"Sansita Swashed"', 'display'],
+            body: ['Cantarell', 'sans-serif'],
+        },
         extend: {},
     },
-    plugins: [require('daisyui')],
+    plugins: [require('@tailwindcss/typography'), require('daisyui')],
     daisyui: {
         styled: true,
         themes: ['retro', 'synthwave'],
