@@ -1,9 +1,10 @@
 import { useState } from 'react';
+import AnimalDisplay from '../components/AnimalDisplay';
 
 const App = () => {
     return (
         <div>
-            <h1>Coming Soon</h1>
+            <AnimalDisplay />
         </div>
     );
 };

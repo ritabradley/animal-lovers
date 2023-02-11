@@ -1,3 +1,18 @@
+@import url(https://fonts.bunny.net/css?family=cantarell:400|sansita-swashed:500,700);
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+@layer base {
+    html {
+        @apply font-body text-base;
+    }
+
+    h1,
+    h2,
+    h3,
+    h4 {
+        @apply font-display;
+    }
+}
