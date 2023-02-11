@@ -1,7 +1,7 @@
-const AnimalDisplay = () => {
+const AnimalDisplay = ({ type }) => {
     return (
         <div>
-            <h3>Animal Display</h3>
+            <img src={`../imgs/${type}.svg`} alt={type} />
         </div>
     );
 };
