@@ -17,11 +17,11 @@ const App = () => {
     const displayedAnimals = animals.map((animal, index) => <AnimalDisplay key={index} type={animal} />);
 
     return (
-        <div className='prose'>
-            <button className='btn btn-primary btn-wide text-primary-content' onClick={handleButtonClick}>
+        <div className='prose flex flex-col items-center'>
+            <button className='btn btn-primary text-primary-content' onClick={handleButtonClick}>
                 Add Animal
             </button>
-            <div>{displayedAnimals}</div>
+            <div className='flex flex-wrap flex-row justify-center'>{displayedAnimals}</div>
         </div>
     );
 };

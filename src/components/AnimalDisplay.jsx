@@ -6,9 +6,18 @@ const AnimalDisplay = ({ type }) => {
         setLikes(likes + 1);
     };
     return (
-        <div onClick={handleClick}>
-            <img src={`../src/imgs/${type}.svg`} alt={type} />
-            <img src={heart} alt='heart icon' style={{ width: 10 + 10 * likes + 'px' }} />
+        <div
+            className='relative bg-base-300 p-2.5 m-2.5 rounded border border-accent shadow-accent shadow-md
+            '
+            onClick={handleClick}
+        >
+            <img className='h-52' src={`../src/imgs/${type}.svg`} alt={type} />
+            <img
+                className='absolute bottom-1 right-1'
+                src={heart}
+                alt='heart icon'
+                style={{ width: 10 + 10 * likes + 'px' }}
+            />
         </div>
     );
 };
